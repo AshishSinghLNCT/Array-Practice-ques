@@ -1,0 +1,6 @@
+int missingNumber(int[] arr, int n) {
+    int sum = n * (n + 1) / 2;
+    int actual = 0;
+    for (int x : arr) actual += x;
+    return sum - actual;
+}
